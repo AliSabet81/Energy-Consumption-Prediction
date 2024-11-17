@@ -1,0 +1,52 @@
+Model Evaluation:
+Mean Absolute Error (MAE): 0.043490710980723345
+Mean Squared Error (MSE): 0.005480010870594489
+R² Score: 0.3730381399779359
+
+Model Evaluation Metrics:
+
+1. Mean Absolute Error (MAE):
+    The MAE is 0.0435, indicating that on average, the model's predictions deviate from the actual values by about 0.0435 units. This shows the model is relatively accurate for a typical sample.
+
+2. Mean Squared Error (MSE):
+    The MSE is 0.00548, reflecting the average squared difference between predicted and actual values. Squaring penalizes larger errors, suggesting the model performs well but has room for improvement in handling outliers.
+
+3. R² Score:
+    The R² score is 0.373, meaning the model explains approximately 37.3% of the variance in the target variable. While better than random guessing, this score indicates that the model is underfitting, likely because additional improvements in feature engineering or hyperparameter tuning are needed.
+
+Graph Analysis:
+
+1. Comparison Graph (First Image):
+    The overlap between actual (blue) and predicted (red) values shows the model tracks general patterns in energy consumption but struggles with sharp peaks or fluctuations. This indicates the model could benefit from:
+More training data or improved feature selection.
+Additional optimization in capturing non-linear patterns.
+
+2. Scatter Plot (Second Image):
+    The scatter plot shows a moderate correlation between predicted and actual values. Points deviating from the ideal diagonal line (red dashed) indicate prediction errors, especially for higher actual values. This suggests the model may not generalize well for extreme cases.
+
+
+Conclusion: This step enhances the model evaluation by incorporating visualizations and key metrics. The results suggest that while the neural network captures some patterns in energy consumption, further work is needed to improve accuracy and reduce underfitting.
+
+
+ارزیابی مدل:
+
+خطای مطلق میانگین (MAE):
+مقدار MAE برابر 0.0435 است، که نشان می‌دهد به‌طور میانگین پیش‌بینی‌های مدل حدود 0.0435 واحد با مقادیر واقعی اختلاف دارند. این عدد نشان‌دهنده دقت قابل قبول مدل است.
+
+خطای میانگین مربعات (MSE):
+مقدار MSE برابر 0.00548 است، که بیانگر میانگین اختلافات مربعی بین مقادیر پیش‌بینی‌شده و واقعی است. این معیار به خطاهای بزرگ‌تر وزن بیشتری می‌دهد، که نشان‌دهنده عملکرد نسبتاً خوب مدل، اما نیاز به بهبود در مدیریت نقاط پرت است.
+
+ضریب تعیین (R²):
+مقدار R² برابر 0.373 است، به این معنی که مدل حدود 37.3٪ از تغییرات متغیر هدف را توضیح می‌دهد. این عدد نشان می‌دهد که مدل کمی دچار underfitting شده است و نیاز به بهبود دارد.
+
+تحلیل نمودارها:
+
+نمودار مقایسه (تصویر اول):
+هم‌پوشانی بین مقادیر واقعی (آبی) و پیش‌بینی‌شده (قرمز) نشان می‌دهد که مدل الگوهای کلی مصرف انرژی را دنبال می‌کند، اما در شناسایی نوسانات شدید یا قله‌ها ضعف دارد. این مشکل ممکن است با:
+
+اضافه کردن داده‌های بیشتر.
+بهبود انتخاب ویژگی‌ها یا بهینه‌سازی بهتر شبکه عصبی قابل حل باشد.
+نمودار پراکندگی (تصویر دوم):
+نمودار پراکندگی همبستگی متوسطی را بین مقادیر واقعی و پیش‌بینی‌ها نشان می‌دهد. نقاطی که از خط ایده‌آل (خط قرمز) فاصله دارند، نشان‌دهنده خطاهای پیش‌بینی هستند، به‌ویژه برای مقادیر واقعی بالا. این مورد نشان می‌دهد که مدل در تعمیم‌دهی به شرایط شدید ضعف دارد.
+
+نتیجه‌گیری: این مرحله با افزودن تحلیل گرافیکی و معیارهای کلیدی ارزیابی، مدل را بهتر تحلیل می‌کند. نتایج نشان می‌دهد که شبکه عصبی الگوهای مصرف انرژی را تا حدی تشخیص می‌دهد، اما نیاز به بهبود بیشتری برای کاهش underfitting و افزایش دقت دارد.

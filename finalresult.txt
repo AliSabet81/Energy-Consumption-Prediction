@@ -1,0 +1,58 @@
+Project Analysis Conclusion:
+
+    1. Best Algorithm:
+        The Multi-Layer Perceptron (MLP) Regressor demonstrated the best performance:
+        R² Score: Achieved a value of 0.373, indicating a superior ability to explain variance in the data compared to other models.
+        Prediction Errors: Lower MAE and MSE metrics highlight reduced prediction errors and higher accuracy.
+
+    2. Feature Importance Analysis:=
+    Features such as temperature, humidity, and lighting had a more significant impact on energy consumption predictions.
+    Advanced tools like SHAP or Feature Importance can be employed to quantify the contribution of each feature in greater detail.
+
+    3. Weaknesses and Improvement Opportunities:
+        Model Limitations:
+            The neural network model requires a large dataset and is sensitive to hyperparameter tuning.
+        Suboptimal R² Score:
+            The relatively low R² score indicates the model's inability to fully capture data variability.
+
+    Way for improvement:
+        Collect more diverse and comprehensive data.
+        Identify and address outliers that may negatively impact predictions.
+        Fine-tune hyperparameters using techniques like Grid Search.
+        Experiment with ensemble models such as Gradient Boosting or Random Forest.
+
+    4. Suggestions:
+        Incorporate time-series data and trend analysis to enhance predictions.
+        Leverage Transfer Learning to utilize pre-trained models for better generalization.
+
+Overall Conclusion:
+
+The neural network effectively captured complex, non-linear relationships in the data. While the model's performance has improved, there is still room for enhancement. By integrating advanced techniques and utilizing richer datasets, the predictive accuracy can be significantly improved.
+
+نتیجه‌گیری تحلیل پروژه:
+بهترین الگوریتم:
+
+مدل شبکه عصبی چندلایه (MLP Regressor) بهترین عملکرد را ارائه داد:
+R² Score: مقدار 0.373 نشان‌دهنده توانایی مدل در توضیح بخشی از واریانس داده‌هاست که از سایر مدل‌ها بالاتر است.
+خطاهای پیش‌بینی: معیارهای MSE و MAE پایین‌تر از سایر الگوریتم‌ها بود، که دقت بالاتر در پیش‌بینی‌ها را نشان می‌دهد.
+تحلیل تأثیر ویژگی‌ها:
+
+برخی از ویژگی‌ها مانند دما، رطوبت، و روشنایی تأثیر بیشتری بر مصرف انرژی دارند.
+برای تحلیل عمیق‌تر می‌توان از ابزارهای پیشرفته مانند SHAP یا Feature Importance برای شناسایی میزان اهمیت هر ویژگی استفاده کرد.
+نقاط ضعف و فرصت‌های بهبود:
+
+محدودیت مدل:
+شبکه عصبی به دلیل نیاز به داده‌های آموزشی حجیم و حساسیت به تنظیم هایپرپارامترها، همچنان جای بهبود دارد.
+R² پایین‌تر از مقدار ایده‌آل:
+مقدار R² نشان می‌دهد که مدل توانایی کافی در توضیح تمامی تغییرات داده‌ها ندارد.
+برای بهبود:
+جمع‌آوری داده‌های بیشتر و متنوع‌تر.
+بررسی داده‌های پرت (Outliers) برای کاهش تأثیر منفی آن‌ها.
+تنظیم دقیق‌تر هایپرپارامترها با استفاده از تکنیک‌هایی مانند جستجوی شبکه‌ای (Grid Search).
+استفاده از مدل‌های ترکیبی (Ensemble Models) مانند Gradient Boosting یا Random Forest.
+پیشنهادهای عملی:
+
+ترکیب داده‌های زمانی با تحلیل روندها برای پیش‌بینی بهتر.
+استفاده از روش‌های یادگیری انتقالی (Transfer Learning) برای بهره‌گیری از مدل‌های از پیش آموزش‌دیده.
+نتیجه‌گیری کلی:
+الگوریتم شبکه عصبی توانسته به خوبی روابط پیچیده و غیرخطی را شناسایی کند. هرچند عملکرد مدل بهبود یافته است، هنوز فضای کافی برای ارتقای دقت پیش‌بینی‌ها و کاهش خطاها وجود دارد. ترکیب تکنیک‌های پیشرفته‌تر و داده‌های بیشتر می‌تواند نتایج قوی‌تری ارائه دهد.

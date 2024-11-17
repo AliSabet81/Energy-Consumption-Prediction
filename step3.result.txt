@@ -1,0 +1,67 @@
+Model: Linear Regression
+Mean Squared Error: 0.00726025971135054
+R2 Score: 0.16936187895229782
+
+Model: Decision Tree
+Mean Squared Error: 0.007340514502988693
+R2 Score: 0.16018001880104582
+
+Model: Neural Network
+Mean Squared Error: 0.0065415237933842355
+R2 Score: 0.25159164430017844
+
+Models have been evaluated. Choose the best model based on accuracy and lower error.
+
+
+1. Linear Regression:
+    Mean Squared Error (MSE): 0.00726
+    R² Score: 0.169
+    Interpretation:
+        The MSE indicates how well the model's predictions are aligned with the actual values, with a lower MSE being better. Here, the MSE of 0.00726 suggests the model has some error in prediction but is not exceptionally poor.
+        The R² Score is a measure of how well the model explains the variability of the target variable. A value of 0.169 means that the model explains only about 17% of the variance in the energy consumption data. This suggests the model is not performing well, and other models might be more suitable.
+
+2. Decision Tree:
+    Mean Squared Error (MSE): 0.00734
+    R² Score: 0.160
+    Interpretation:
+        The MSE of 0.00734 is very close to that of the linear regression model, meaning this model also has similar prediction errors.
+        The R² Score of 0.160 is slightly lower than linear regression, suggesting this model performs worse at capturing the variability in the target variable.
+
+3. Neural Network:
+    Mean Squared Error (MSE): 0.00654
+    R² Score: 0.251
+    Interpretation:
+        The MSE of 0.00654 is the lowest among the three models, meaning this model has better prediction accuracy.
+        The R² Score of 0.251 is the highest, indicating that this model explains about 25% of the variance in the data. While it's still not a high R², it shows that the neural network is better than both the linear regression and decision tree models.
+
+Conclusion:
+    Based on these results, the Neural Network model is the best-performing one, as it has the lowest MSE and the highest R² score.
+    However, none of the models are performing exceptionally well, as the R² scores are relatively low, indicating that there may be other factors at play that these models aren't capturing effectively. It might be worthwhile to explore additional features, fine-tune the models, or use more advanced techniques.
+
+تحلیل نتایج:
+
+1. رگرسیون خطی:
+خطای مربعات میانگین (MSE): 0.00726
+امتیاز R²: 0.169
+تفسیر:
+MSE نشان می‌دهد که پیش‌بینی‌های مدل چقدر با مقادیر واقعی تطابق دارند و هر چه کمتر باشد بهتر است. این مدل با MSE برابر 0.00726 دارای خطای پیش‌بینی قابل قبولی است، اما عالی نیست.
+امتیاز R² نشان می‌دهد که مدل چقدر توانسته تغییرات متغیر هدف را توضیح دهد. مقدار 0.169 نشان می‌دهد که مدل تنها حدود 17٪ از تغییرات مصرف انرژی را توضیح می‌دهد که نشان می‌دهد این مدل عملکرد خوبی ندارد.
+
+2. درخت تصمیم:
+خطای مربعات میانگین (MSE): 0.00734
+امتیاز R²: 0.160
+تفسیر:
+MSE برابر با 0.00734 است که خیلی شبیه به مدل رگرسیون خطی است و نشان می‌دهد که مدل خطای پیش‌بینی مشابهی دارد.
+امتیاز R² برابر با 0.160 است که کمی از رگرسیون خطی کمتر است، بنابراین این مدل کمی ضعیف‌تر از رگرسیون خطی است در توضیح تغییرات مصرف انرژی.
+
+3. شبکه عصبی:
+خطای مربعات میانگین (MSE): 0.00654
+امتیاز R²: 0.251
+
+تفسیر:
+MSE برابر با 0.00654 است که از هر سه مدل کمترین است و نشان می‌دهد که این مدل دقت پیش‌بینی بهتری دارد.
+امتیاز R² برابر با 0.251 است که از دیگر مدل‌ها بالاتر است و نشان می‌دهد که این مدل 25٪ از تغییرات مصرف انرژی را توضیح می‌دهد.
+
+نتیجه‌گیری:
+بر اساس این نتایج، مدل شبکه عصبی بهترین عملکرد را داشته است زیرا کمترین MSE و بالاترین امتیاز R² را دارد.
+با این حال، هیچ یک از مدل‌ها عملکرد بسیار خوبی نداشته‌اند، زیرا امتیازهای R² نسبتاً پایین هستند که نشان می‌دهد ممکن است عوامل دیگری وجود داشته باشد که این مدل‌ها قادر به توضیح آن‌ها نبوده‌اند. ممکن است بهتر باشد ویژگی‌های اضافی را بررسی کنید، مدل‌ها را تنظیم کنید یا از تکنیک‌های پیشرفته‌تر استفاده کنید.

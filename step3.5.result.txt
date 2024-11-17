@@ -1,0 +1,68 @@
+Best parameters:
+{'activation': 'relu', 'hidden_layer_sizes': (150, 100, 50), 'learning_rate': 'constant', 'max_iter': 500, 'solver': 'adam'}
+
+Performance of the optimized model:
+Mean Squared Error: 0.005480010870594489
+R2 Score: 0.3730381399779359
+
+Purpose of This Step:
+This step focuses on optimizing the neural network model by using GridSearchCV to find the best combination of hyperparameters. Compared to the previous step, which involved training and evaluating default models, this step seeks to improve performance through systematic tuning. The reasons for implementing this step are:
+
+Improving Model Accuracy:
+
+The previous evaluation showed that the neural network had potential, but its R² score was relatively low. Optimizing hyperparameters can enhance the model's ability to explain the variance in the target variable.
+Exploring Hyperparameters:
+
+Parameters such as the number of hidden layers, activation function, solver, and learning rate can significantly impact the performance of a neural network. By tuning these parameters, we aim to achieve better results.
+Systematic Search:
+
+GridSearchCV performs an exhaustive search over all possible combinations of hyperparameters, ensuring no configuration is overlooked.
+Analysis of the Output
+Best Parameters Found:
+plaintext
+Copy code
+{'activation': 'relu', 'hidden_layer_sizes': (150, 100, 50), 'learning_rate': 'constant', 'max_iter': 500, 'solver': 'adam'}
+Activation Function: relu (Rectified Linear Unit) is a popular choice for neural networks as it helps with faster convergence and better performance.
+Hidden Layer Structure: (150, 100, 50) indicates a deep architecture with three layers, where the number of neurons decreases progressively.
+Learning Rate: constant, which keeps the learning rate fixed throughout the training process.
+Solver: adam, an adaptive optimization algorithm that performs well in practice with less tuning required.
+Maximum Iterations: 500, which balances computational efficiency and model performance.
+Performance of the Optimized Model:
+plaintext
+Copy code
+Mean Squared Error: 0.005480010870594489
+R2 Score: 0.3730381399779359
+MSE: The error is relatively low, showing good prediction accuracy.
+R² Score: The score improved to 0.373, up from the default configuration's 0.251 in the previous step. While the improvement is noticeable, the score still indicates the model is explaining only 37.3% of the variance in the target variable.
+Conclusion
+Why This Step Was Necessary:
+The default neural network model from the previous step was not fully optimized. By systematically exploring hyperparameters, this step aimed to enhance the model's predictive power and efficiency.
+Evaluation:
+The optimized model shows improved performance metrics (lower MSE and higher R²).
+While the optimization has enhanced the model, the relatively low R² score suggests that:
+There might be additional influential features missing in the dataset.
+The data may have intrinsic noise or non-linear patterns that require even more advanced modeling techniques.
+
+تحلیل به فارسی
+بهترین تنظیمات یافت‌شده:
+plaintext
+Copy code
+{'activation': 'relu', 'hidden_layer_sizes': (150, 100, 50), 'learning_rate': 'constant', 'max_iter': 500, 'solver': 'adam'}
+تابع فعال‌سازی: relu که برای شبکه‌های عصبی بسیار مؤثر است و به همگرایی سریع‌تر کمک می‌کند.
+ساختار لایه‌های مخفی: (150, 100, 50)، معماری عمیقی با سه لایه که تعداد نرون‌ها به‌تدریج کاهش می‌یابد.
+نرخ یادگیری: constant، نرخ یادگیری در طول فرآیند آموزش ثابت است.
+حل‌کننده (Solver): adam، یک الگوریتم بهینه‌سازی تطبیقی که عملکرد خوبی دارد.
+تعداد تکرارها: 500، که بین کارایی محاسباتی و دقت مدل تعادل ایجاد می‌کند.
+عملکرد مدل بهینه‌شده:
+plaintext
+Copy code
+Mean Squared Error: 0.005480010870594489
+R2 Score: 0.3730381399779359
+MSE: خطای نسبتاً کم نشان‌دهنده دقت خوب پیش‌بینی‌هاست.
+امتیاز R²: بهبود امتیاز به 0.373 نشان‌دهنده افزایش دقت مدل است، اما هنوز تنها 37.3٪ از تغییرات متغیر هدف توضیح داده شده است.
+چرا این مرحله انجام شد:
+برای بهبود دقت مدل و پیدا کردن بهترین تنظیمات شبکه عصبی.
+بررسی تأثیر پارامترهای مختلف بر عملکرد مدل.
+ارزیابی:
+مدل بهینه‌شده عملکرد بهتری نسبت به تنظیمات پیش‌فرض دارد.
+با این حال، امتیاز پایین R² نشان می‌دهد که ممکن است ویژگی‌های مهمی در داده موجود نباشد یا مدل‌های پیچیده‌تر نیاز باشد.

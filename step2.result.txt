@@ -1,0 +1,105 @@
+Number of missing values in each column:
+date           0
+Appliances     0
+lights         0
+T1             0
+RH_1           0
+T2             0
+RH_2           0
+T3             0
+RH_3           0
+T4             0
+RH_4           0
+T5             0
+RH_5           0
+T6             0
+RH_6           0
+T7             0
+RH_7           0
+T8             0
+RH_8           0
+T9             0
+RH_9           0
+T_out          0
+Press_mm_hg    0
+RH_out         0
+Windspeed      0
+Visibility     0
+Tdewpoint      0
+rv1            0
+rv2            0
+dtype: int64
+
+Remaining columns:
+Index(['Appliances', 'lights', 'T1', 'RH_1', 'T2', 'RH_2', 'T3', 'RH_3', 'T4',
+       'RH_4', 'T5', 'RH_5', 'T6', 'RH_6', 'T7', 'RH_7', 'T8', 'RH_8', 'T9',
+       'RH_9', 'T_out', 'Press_mm_hg', 'RH_out', 'Windspeed', 'Visibility',
+       'Tdewpoint'],
+      dtype='object')
+
+Normalized data (first few rows):
+   Appliances    lights       T1      RH_1        T2      RH_2  ...     T_out  Press_mm_hg    RH_out  Windspeed  Visibility  Tdewpoint
+0    0.046729  0.428571  0.32735  0.566187  0.225345  0.684038  ...  0.372990     0.097674  0.894737   0.500000    0.953846   0.538462
+1    0.046729  0.428571  0.32735  0.541326  0.225345  0.682140  ...  0.369239     0.100000  0.894737   0.476190    0.894872   0.533937
+2    0.037383  0.428571  0.32735  0.530502  0.225345  0.679445  ...  0.365488     0.102326  0.894737   0.452381    0.835897   0.529412
+3    0.037383  0.571429  0.32735  0.524080  0.225345  0.678414  ...  0.361736     0.104651  0.894737   0.428571    0.776923   0.524887
+4    0.046729  0.571429  0.32735  0.531419  0.225345  0.676727  ...  0.357985     0.106977  0.894737   0.404762    0.717949   0.520362
+
+[5 rows x 26 columns]
+
+Preprocessed data saved as: 'preprocessed_energy_data.csv'
+
+1. Initial Information:
+The dataset contains 29 columns and 19,735 rows, with no missing values in any column. The data types include integers, floats, and one object type for the date column. Memory usage is approximately 4.4 MB.
+
+2. Summary Statistics:
+Appliances: Energy consumption values range from 10 to 1,080, with an average of approximately 97.69.
+Other columns (like temperature, humidity, etc.) have their unique ranges and distributions, which affect their influence on the model.
+
+3. Missing Values:
+As there are no missing values in the dataset (isnull().sum() returns zero for all columns), no imputation or row deletion is necessary.
+
+4. Feature Selection:
+The date column is removed since it is non-numerical and not directly relevant to modeling.
+rv1 and rv2 are dropped because they add no meaningful information.
+
+5. Normalization:
+The data is normalized using MinMaxScaler to ensure all features are within the range [0, 1].
+This prevents features with larger scales from dominating during model training.
+
+6. Preprocessed Dataset:
+The processed dataset now has 26 columns and is saved as preprocessed_energy_data.csv.
+A quick look at the first five rows shows normalized values for all features.
+
+
+Advantages of Preprocessing:
+Normalization ensures a level playing field for all features in the machine learning algorithms.
+Removing unnecessary columns reduces noise, improving model efficiency and interpretability.
+
+This step has transformed raw data into a machine-learning-ready dataset. All numerical values are normalized, irrelevant features are removed, and the dataset is free of missing values. These preprocessing steps ensure better accuracy and speed for machine learning models.
+
+
+اطلاعات اولیه
+مجموعه داده شامل ۲۹ ستون و ۱۹,۷۳۵ ردیف است و هیچ مقدار گمشده‌ای در هیچ ستونی مشاهده نمی‌شود. انواع داده‌ها شامل اعداد صحیح، اعداد اعشاری و یک ستون متنی برای تاریخ است. حافظه مورد استفاده تقریبا ۴.۴ مگابایت است.
+
+آمار توصیفی
+Appliances (مصرف انرژی):
+مقادیر مصرف انرژی بین ۱۰ تا ۱۰۸۰ متغیر است و میانگین مصرف حدود ۹۷.۶۹ است.
+ستون‌های دیگر مانند دما و رطوبت دامنه‌های خاص خود را دارند و تأثیر متفاوتی روی مدل دارند.
+داده‌های گمشده
+در این مجموعه داده هیچ مقدار گمشده‌ای وجود ندارد (بررسی با isnull().sum() نشان می‌دهد تمامی ستون‌ها دارای مقادیر کامل هستند). بنابراین نیازی به پر کردن مقادیر گمشده یا حذف ردیف‌ها نیست.
+
+انتخاب ویژگی‌ها
+ستون تاریخ (date) حذف شد زیرا عددی نیست و برای مدل‌سازی مستقیم ضروری نیست.
+ستون‌های rv1 و rv2 نیز به دلیل عدم داشتن اطلاعات معنادار حذف شدند.
+نرمال‌سازی داده‌ها
+داده‌ها با استفاده از روش MinMaxScaler نرمال‌سازی شدند تا تمامی ویژگی‌ها در بازه [0, 1] قرار گیرند.
+این مرحله از تأثیرگذاری ویژگی‌هایی با مقیاس بزرگ‌تر بر روی مدل جلوگیری می‌کند.
+مجموعه داده پیش‌پردازش شده
+داده‌های پردازش‌شده اکنون دارای ۲۶ ستون هستند و به صورت preprocessed_energy_data.csv ذخیره شده‌اند.
+پنج ردیف اول نشان‌دهنده مقادیر نرمال‌شده تمام ویژگی‌ها است.
+مزایای پیش‌پردازش
+نرمال‌سازی: تمام ویژگی‌ها را به یک سطح مساوی می‌آورد و از تسلط ویژگی‌های با مقیاس بزرگ جلوگیری می‌کند.
+حذف ستون‌های غیرضروری: نویز داده کاهش یافته و کارایی و تفسیر مدل افزایش می‌یابد.
+نتیجه
+این مراحل، داده خام را به مجموعه‌ای آماده برای یادگیری ماشین تبدیل کرده است. این مجموعه داده اکنون نرمال‌سازی شده، بدون مقادیر گمشده، و با ستون‌های مرتبط برای مدل‌سازی است. این پردازش‌ها دقت و سرعت مدل‌های یادگیری ماشین را بهبود می‌بخشند.
